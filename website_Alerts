@@ -1,0 +1,10 @@
+#!/bin/bash
+
+URL=""
+EMAIL=""
+
+STATUS=$(curl -s -o /dev/null -w "%{http_code},%{http_status})" "${URL}")
+
+if (( STATUS != 200 )); then
+    echo "Website $URL is down, Status code: $STATUS | mail -s "Website Down Alert" $EMAIL
+    fi

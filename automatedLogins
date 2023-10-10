@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Define login URL and credentials
+URL=""
+USERNAME=""
+PASSWORD=""
+ENCRYPTION_KEY="my-encryption-key"
+# Send a POST request to login
+curl -c cookies.txt -d "username=$USERNAME,password=$PASSWORD" $URL
+# -c cookies.txt saves the session cookies to file name cookies.txt
+# -d specifies the data to send in the POST request
+
+gpg --symmetric --cipher-algo AES256 --passphrase "$ENCRYPTION_KEY" cookies.txt
+rm cookies.txt
