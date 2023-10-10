@@ -1,0 +1,5 @@
+THRESHOLD:$100
+USAGE=$(df / | tail -1 | awk '{print $5}' | sed 's/%/')
+if ((USAGE>THRESHOLD)); then
+    echo "Disk usage is at $USAGE%, exceeds the threshold of $THRESHOLD%"
+    fi
