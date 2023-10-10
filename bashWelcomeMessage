@@ -1,7 +1,8 @@
 #!/bin/bash
+name="Codey"
 
-echo "Good Morning, Welcome to the new day!"
+echo "Good Morning $name, Welcome to the new day!"
     sleep 1
 echo "Be sure to follow up on your daily tasks."
     sleep 1
-echo "and respond to emails and slack"
+echo "and respond to emails and slack."
