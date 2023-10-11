@@ -1,0 +1,28 @@
+/* src/App.css */
+
+.App {
+    text-align: center;
+  }
+  
+  .plant-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .glossary {
+    margin: 20px;
+  }
+  
+  .user-plants {
+    margin: 20px;
+  }
+  
+  form {
+    margin: 20px;
+  }
+  
+  input {
+    margin-left: 10px;
+  }

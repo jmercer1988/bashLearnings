@@ -22,16 +22,18 @@ body {
   
   header nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
     display: flex;
+    text-align: center;
   }
   
   header nav li {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   
   header nav a {
+    margin: auto;
     color: #ecf0f1;
     text-decoration: none;
   }
@@ -47,6 +49,10 @@ body {
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-head{
+    text-align: center;
   }
   
   form {
@@ -79,4 +85,25 @@ body {
 
 #login-btn:hover {
     color: #ffffff;
+}
+
+#contact{
+  text-align: center;
+  position: fixed;
+  align-content: center;
+}
+
+#frontPageIcon {
+  width: 30px;
+  height: 30px;
+  margin:50px 5px 0 0;
+}
+
+#navFormat {
+  align-content: left;
+  text-align: left;
+  padding: 5px;
+  align-items: left;
+  margin: auto;
+  margin-left: -150px;
 }
